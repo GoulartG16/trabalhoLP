@@ -1,1 +1,3 @@
-
+- Um erro, pois não dá pra subtrair esses dois tipos ded dado entre si.
+- int e char.
+- [Error]invalid operands of types 'int' and 'const char[3]' to bynary 'operator-', isso significa que a máquina não consegue fazer a operação de subtração(-) entre os tipos int e char.
