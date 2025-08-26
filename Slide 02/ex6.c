@@ -11,3 +11,4 @@ int main(){
     printf("Soma: %d", soma);
     return 0;
 }
+ 
