@@ -1,1 +1,2 @@
-
+- Tipos de dados são categorias que definem a natureza dos valores que podem ser armazenados em uma variável ou constante, determinando que tipo de dados ela pode conter e quais operações podem ser realizadas com eles.
+- Servem pra determinar as operações que podem ser executadas nos dados, no significado dos dados e na maneira como os valores desse tipo podem ser armazenados.
