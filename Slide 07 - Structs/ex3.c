@@ -6,16 +6,12 @@ struct Personagem {
     int experiencia;
 };
 void preencheB (struct Personagem* p) {
-    int forca, energia, experiencia;
     printf("Força: ");
-    scanf("%d", &forca);
+    scanf("%d", &p->forca);
     printf("Energia: ");
-    scanf("%d", &energia);
+    scanf("%d", &p->energia);
     printf("Experiência: ");
-    scanf("%d", &experiencia);
-    (*p).forca = forca;
-    p->energia = energia;
-    (*p).experiencia = experiencia;
+    scanf("%d", &p->experiencia);
 }
 
 void main (void) {
