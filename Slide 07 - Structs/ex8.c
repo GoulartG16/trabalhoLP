@@ -36,3 +36,6 @@ Ponto MaisDistante(Ponto *p, int n){
     }
     return maisdistante;
 }
+int main(){
+    Ponto pontos[10];
+}
