@@ -1,0 +1,3 @@
+- Na primeira abordagem, a função preenche a struct por valor, e na outra preenche através de ponteiros.
+- A primeira abordagem foi mais simples de pensar e executar, por mais que geram o exato mesmo resultado.
+- No preenchimento por ponteiro, as variaveis sao diretamente preenchidas, sem o auxilio de uma temporária, o que faz com que ela seja mais rápida e custe menos memória, mesmo que seja menos legível
