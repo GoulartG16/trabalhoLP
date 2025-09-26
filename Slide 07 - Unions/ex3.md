@@ -1,0 +1,2 @@
+- é uma estrutura que é uma fusão de uma union com um discriminador(tipo uma tag) para podermos ter o controle de que membro da union está sendo utilizado.
+- esse artifício é muito útil para conseguirmos ter noção do que dado está preenchido na union.
