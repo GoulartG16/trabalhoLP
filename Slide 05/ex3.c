@@ -12,12 +12,11 @@ int main(){
 		printf("\n Compra %d\n", i+1);
 		if (saldoConta2 > saldoConta1){
 			maior = &saldoConta2;
-			compra(maior, compras[i]);
 		}	
 		else {
 			maior = &saldoConta1;
-			compra(maior, compras[i]);
 		}
+		compra(maior, compras[i]);
 		printf("Saldo Final Conta 1: %d\n", saldoConta1);
 		printf("Saldo Final Conta 2: %d\n", saldoConta2);
 	}
