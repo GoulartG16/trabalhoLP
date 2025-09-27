@@ -27,6 +27,7 @@ typedef struct {
 } Repteis;
 
 typedef union {
+    int tag; // 0- anfíbio, 1- ave, 2- mamífero, 3- réptil
     Anfibios anfibio;
     Aves ave;
     Mamiferos mamifero;
@@ -37,31 +38,37 @@ int main() {
     Animal sapo, aguia, leao, tartaruga, canario, cachorro;
 
     // Animal 1 - Sapo (Anfíbio)
+    sapo.tag = 0;
     sapo.anfibio.ndepatas = 4;
     strcpy(sapo.anfibio.espessurapele, "Fina");
     sapo.anfibio.cauda = false;
 
     // Animal 2 - Águia (Ave)
+    aguia.tag = 1;
     aguia.ave.comprimentobico = 6.5f;
     aguia.ave.autonomiadevooemdias = 10;
     aguia.ave.frequenciacanto = 3;
 
     // Animal 3 - Leão (Mamífero)
+    leao.tag = 2;
     leao.mamifero.qtd_dentes = 30;
     leao.mamifero.volumecerebro = 1.2f;
     leao.mamifero.velocidade = 80;
 
     // Animal 4 - Tartaruga (Réptil)
+    tartaruga.tag = 3;
     tartaruga.reptil.venenoso = false;
     tartaruga.reptil.autonomia_agua = 15;
     tartaruga.reptil.espessuraovos = 1.1f;
 
     // Animal 5 - Canário (Ave)
+    canario.tag = 1;
     canario.ave.comprimentobico = 1.8f;
     canario.ave.autonomiadevooemdias = 3;
     canario.ave.frequenciacanto = 9;
 
     // Animal 6 - Cachorro (Mamífero)
+    cachorro.tag = 2;
     cachorro.mamifero.qtd_dentes = 42;
     cachorro.mamifero.volumecerebro = 1.1f;
     cachorro.mamifero.velocidade = 45;
