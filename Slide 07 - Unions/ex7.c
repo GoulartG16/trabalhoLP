@@ -1,13 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef enum {
-    CEP,
-    PREENCHER
-} TipodePreenchimento;
 struct endereco{
     // o usuário escolhe entre preencher seu endereço usando o CEP ou preenchendo sozinho
-    TipodePreenchimento tag;
+    int tag; // 0 pra CEP e 1 pra preencher sozinho
     int num;
     union {
         struct{
@@ -26,11 +22,11 @@ void PreencheEndereco(struct endereco *E){
     scanf("%d", &E->tag);
     getchar();
     switch (E->tag) {
-        case CEP:
+        case 0:
             printf("CEP: ");
             scanf("%d", &E->cep);
             break;
-        case PREENCHER:
+        case 1:
             printf("Estado: ");
             fgets(E->estado, sizeof(E->estado), stdin);
             printf("Cidade: ");
@@ -46,10 +42,10 @@ void PreencheEndereco(struct endereco *E){
 }
 void ImprimeEndereco(struct endereco *E){
     switch (E->tag) {
-        case CEP:
+        case 0:
             printf("CEP: %d\n", E->cep);
             break;
-        case PREENCHER:
+        case 1:
             printf("Estado: %s\n", E->estado);
             printf("Cidade: %s\n", E->cidade);
             printf("Bairro: %s\n", E->bairro);
