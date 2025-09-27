@@ -26,6 +26,7 @@ typedef struct {
     float espessuraovos;
 } Repteis;
 typedef struct{
+    int tag;
     char nome[20];
     char cor[20];
     union {
@@ -39,6 +40,7 @@ int main(){
     Animal sapo, aguia, leao, tartaruga, canario, cachorro;
 
      // Animal 1 - Sapo (Anfíbio)
+    sapo.tag = 0;
     strcpy(sapo.nome, "Sapo");
     strcpy(sapo.cor, "Verde");
     sapo.anfibio.ndepatas = 4;
@@ -46,6 +48,7 @@ int main(){
     sapo.anfibio.cauda = false;
 
     // Animal 2 - Águia (Ave)
+    aguia.tag = 1;
     strcpy(aguia.nome, "Águia");
     strcpy(aguia.cor, "Marrrom e Branco");
     aguia.ave.comprimentobico = 6.5f;
@@ -53,6 +56,7 @@ int main(){
     aguia.ave.frequenciacanto = 3;
 
     // Animal 3 - Leão (Mamífero)
+    leao.tag = 2;
     strcpy(leao.nome, "Leão");
     strcpy(leao.cor, "Amarelo");
     leao.mamifero.qtd_dentes = 30;
@@ -60,6 +64,7 @@ int main(){
     leao.mamifero.velocidade = 80;
 
     // Animal 4 - Tartaruga (Réptil)
+    tartaruga.tag = 3;
     strcpy(tartaruga.nome, "Tartaruga");
     strcpy(tartaruga.cor, "Verde");
     tartaruga.reptil.venenoso = false;
@@ -67,6 +72,7 @@ int main(){
     tartaruga.reptil.espessuraovos = 1.1f;
 
     // Animal 5 - Canário (Ave)
+    canario.tag = 1;
     strcpy(canario.nome, "Canário");
     strcpy(canario.cor, "Amarelo");
     canario.ave.comprimentobico = 1.8f;
@@ -74,6 +80,7 @@ int main(){
     canario.ave.frequenciacanto = 9;
 
     // Animal 6 - Cachorro (Mamífero)
+    cachorro.tag = 2;
     strcpy(cachorro.nome, "Cachorro");
     strcpy(cachorro.cor, "Marrom");
     cachorro.mamifero.qtd_dentes = 42;
