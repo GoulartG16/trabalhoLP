@@ -3,7 +3,7 @@
 
 int main(){
   char str[25], aux;
-  int i=o;
+  int i=0;
   FILE* f = fopen("arquivo.txt", "r");
   aux = fgetc(f);
   while (aux != EOF){
