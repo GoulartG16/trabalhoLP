@@ -14,5 +14,6 @@ int main(){
   }
   str[i] = '\0';
   printf("%s", str);
+  fclose(f);
   return 0;
 }
