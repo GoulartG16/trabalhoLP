@@ -1,0 +1,2 @@
+- o scanf() que eu usei ja adicionava o \0 no final da string e eu usava o próprio \0 como condição para parar de escrever, então ele é de extrema importância para a escrita correta da string no arquivo
+- quando lemos uma string de um arquivo, temos que tomar o cuidado de adicionar o \0 ao final, pois no arquivo, a string não tem o \0 mas para podermos utilizar ela de forma segura no código precisamos fazer o tratamento e adicionar o \0 ao final da string que armazenar os dados.
